@@ -37,10 +37,15 @@ var app = express();
  * Mongoose configuration.
  */
 
-mongoose.connect(secrets.db);
-mongoose.connection.on('error', function() {
-  console.error('✗ MongoDB Connection Error. Please make sure MongoDB is running.');
+var mongoUri = process.env.MONGOLAB_URI ||
+  process.env.MONGOHQ_URL ||
+  'mongodb://heroku_app23374070:<dbpassword>@ds031407.mongolab.com:31407/heroku_app23374070';
+
+
+
+var db = mongoose.connect(mongoUri, function (err, db) {
 });
+
 
 /**
  * Express configuration.
@@ -68,7 +73,7 @@ app.use(express.methodOverride());
 app.use(express.session({
   secret: secrets.sessionSecret,
   store: new MongoStore({
-    url: 'mongodb://heroku_app23374070:<dbpassword>@ds031407.mongolab.com:31407/heroku_app23374070',
+    url: mongoUri,
     auto_reconnect: true
   })
 }));
