@@ -68,7 +68,7 @@ app.use(express.methodOverride());
 app.use(express.session({
   secret: secrets.sessionSecret,
   store: new MongoStore({
-    url: secrets.db,
+    url: 'mongodb://heroku_app23374070:<dbpassword>@ds031407.mongolab.com:31407/heroku_app23374070',
     auto_reconnect: true
   })
 }));
