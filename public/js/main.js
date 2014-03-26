@@ -3,7 +3,7 @@ $(document).ready(function() {
   // Place JavaScript code here...
  var config = {
 apiKey: 'VI2W2QTKQATWTOVYISYXT0L54PHB5TFGIEHHCE3YCFAKINS0',
-authUrl: 'https://foursquare.com/oauth2/authorize',
+authUrl: 'https://foursquare.com/',
 apiUrl: 'https://api.foursquare.com/'
 };
  
