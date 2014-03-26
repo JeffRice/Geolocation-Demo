@@ -11,5 +11,7 @@
 
 //= require lib/jquery-2.1.0.min
 //= require lib/bootstrap.min
-//= require geo
+//= require lib/leaflet
+//= require lib/jquery.ba-bbq
+//= require lib/geo
 //= require main
