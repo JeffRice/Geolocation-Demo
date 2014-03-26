@@ -3,7 +3,7 @@ $(document).ready(function() {
   // Place JavaScript code here...
  var config = {
 apiKey: 'VI2W2QTKQATWTOVYISYXT0L54PHB5TFGIEHHCE3YCFAKINS0',
-authUrl: 'https://foursquare.com/',
+authUrl: 'https://foursquare.com/oauth2/authorize',
 apiUrl: 'https://api.foursquare.com/'
 };
  
@@ -38,7 +38,7 @@ var map = new L.Map('map_canvas')
 * This is a sample map url that you need to change.
 * Sign up at http://mapbox.com/foursquare for a custom map url.
 */
-var mapboxUrl = 'http://a.tiles.mapbox.com/v3/foursquare.map-b7qq4a62.jsonp';
+var mapboxUrl = 'https://a.tiles.mapbox.com/v3/jrjeffreyrice.hkacgdhe/markers.geojson';
 wax.tilejson(mapboxUrl, function(tilejson) {
 map.addLayer(new wax.leaf.connector(tilejson));
 });
