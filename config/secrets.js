@@ -85,9 +85,9 @@ module.exports = {
   },
 
   foursquare: {
-    clientId: process.env.FOURSQUARE_ID || 'Your Client ID',
-    clientSecret: process.env.FOURSQUARE_SECRET || 'Your Client Secret',
-    redirectUrl: process.env.FOURSQUARE_REDIRECT_URL || 'http://localhost:3000/auth/foursquare/callback'
+    clientId: process.env.FOURSQUARE_ID || 'OUZWCMD3MYTVZQEA1P3RDHYAMECBHZ2POAL5D4XIYVIO3HEC',
+    clientSecret: process.env.FOURSQUARE_SECRET || 'T4EPVHD3YKAJQMTHFUEKH3VJ32BX0F0YHFWSJ3UVBX5Q15XA',
+    redirectUrl: process.env.FOURSQUARE_REDIRECT_URL || 'http://ec2-54-242-157-39.compute-1.amazonaws.com:3000/auth/foursquare/callback'
   },
 
   venmo: {

@@ -10,8 +10,9 @@
  */
 
 //= require lib/bootstrap.min
+//= require lib/jquery.ba-bbq
 //= require lib/leaflet
 //= require lib/wax.leaf.min
-//= require lib/jquery.ba-bbq
-//= require lib/geo
 //= require main
+//= require lib/geo
+

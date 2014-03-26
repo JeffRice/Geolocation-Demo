@@ -1,10 +1,9 @@
-$(document).ready(function() {
-  // Place JavaScript code here..,
 
+  // Place JavaScript code here...
 
+function geoFindMe() {
 
-
- var config = {
+var config = {
 apiKey: 'OUZWCMD3MYTVZQEA1P3RDHYAMECBHZ2POAL5D4XIYVIO3HEC',
 authUrl: 'https://foursquare.com/',
 apiUrl: 'https://api.foursquare.com/'
@@ -15,7 +14,9 @@ apiUrl: 'https://api.foursquare.com/'
 /* Attempt to retrieve access token from URL. */
 function doAuthRedirect() {
 var redirect = window.location.href.replace(window.location.hash, '');
-var url = config.authUrl + 'oauth2/authenticate?response_type=token&client_id=' + config.apiKey + '&redirect_uri=' + encodeURIComponent(redirect) + '&state=' + encodeURIComponent($.bbq.getState('req') || 'users/self');
+var url = config.authUrl + 'oauth2/authenticate?response_type=token&client_id=' + config.apiKey +
+'&redirect_uri=' + encodeURIComponent(redirect) +
+'&state=' + encodeURIComponent($.bbq.getState('req') || 'users/self');
 window.location.href = url;
 };
 
@@ -39,10 +40,11 @@ var map = new L.Map('map_canvas')
 * This is a sample map url that you need to change.
 * Sign up at http://mapbox.com/foursquare for a custom map url.
 */
-var mapboxUrl = 'https://a.tiles.mapbox.com/v3/jrjeffreyrice.hkacgdhe';
+var mapboxUrl = 'http://a.tiles.mapbox.com/v3/foursquare.map-b7qq4a62.jsonp';
 wax.tilejson(mapboxUrl, function(tilejson) {
 map.addLayer(new wax.leaf.connector(tilejson));
 });
+
 
 
 /* Query foursquare API for venue recommendations near the current location. */
@@ -74,8 +76,7 @@ map.addLayer(marker);
 })
 //]]>
 
-});
-//]]>
 
 
+  };
 

@@ -14,9 +14,4 @@ html
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     != js('application')
   body
-    #wrap
-      include partials/navigation
-      .container
-        include partials/flash
-        block content
-    include partials/footer
+    block content
