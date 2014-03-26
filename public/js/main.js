@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // Place JavaScript code here...
  var config = {
-apiKey: 'VI2W2QTKQATWTOVYISYXT0L54PHB5TFGIEHHCE3YCFAKINS0',
+apiKey: 'OUZWCMD3MYTVZQEA1P3RDHYAMECBHZ2POAL5D4XIYVIO3HEC',
 authUrl: 'https://foursquare.com/',
 apiUrl: 'https://api.foursquare.com/'
 };
