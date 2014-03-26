@@ -1,7 +1,7 @@
 module.exports = {
   db: process.env.MONGODB || 'mongodb://<dbuser>:<dbpassword>@ds031407.mongolab.com:31407/heroku_app23374070',
 
-  sessionSecret: process.env.SESSION_SECRET || 'JVVTVYHRJF2HNONS3WWDOWI3RISB5XLETCOVJZQEONXOQRE0',
+  sessionSecret: process.env.SESSION_SECRET || 'Session Secret',
 
   localAuth: true,
 
