@@ -10,9 +10,11 @@
  */
 
 //= require lib/bootstrap.min
+//= require lib/apisamples.js
 //= require lib/jquery.ba-bbq
 //= require lib/leaflet
 //= require lib/wax.leaf.min
-//= require main
 //= require lib/geo
+//= require main
+
 
