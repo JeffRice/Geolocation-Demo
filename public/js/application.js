@@ -14,7 +14,7 @@
 //= require lib/jquery.ba-bbq
 //= require lib/leaflet
 //= require lib/wax.leaf.min
-//= require lib/geo
 //= require main
+
 
 
