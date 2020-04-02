@@ -38,7 +38,7 @@
     "passport-oauth": "~1.0.0",
     "passport-twitter": "~1.0.2",
     "paypal-rest-sdk": "~0.6.4",
-    "request": "~2.34.0",
+    "request": "~2.88.2",
     "tumblr.js": "~0.0.4",
     "twilio": "~1.6.0",
     "twit": "~1.1.12",
